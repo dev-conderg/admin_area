@@ -1,0 +1,1 @@
+Pasta para criação arquivos com manipulação de objetos

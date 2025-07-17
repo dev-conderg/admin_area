@@ -1,0 +1,1 @@
+Pasta de manipulação de servicos comuns em todas as camadas
