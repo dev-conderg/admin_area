@@ -320,33 +320,57 @@
                                 <!-- coluna-1 -->
                             </div>
                             <div class="col-md-8">
-                                <form action="">
+                                <form class="form" action="">
+                                    <!-- Titulo Edital -->
                                     <div class="form-group">
-                                        <label for="formGroupExampleInput">Titulo do Edital</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Titulo do Edital">
+                                        <label for="formTituloInput">Titulo do Edital</label>
+                                        <input type="text" class="form-control is-invalid" id="formTituloInput" placeholder="Titulo do Edital">
+                                        <div id="formTituloInput" class="invalid-feedback">
+                                            Campo titulo deve ser preenchido !
+                                        </div>
+
                                     </div>
                                     <div class="row">
                                         <div class="col">
+                                            <!-- Data Publicacao Edital -->
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput">Data Publicação do Edital</label>
-                                                <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Data Publicação">
+                                                <label for="formDataPublicacaoInput">Data Publicação do Edital</label>
+                                                <input type="date" class="form-control is-invalid" id="formDataPublicacaoInput" placeholder="Data Publicação">
+                                                <div id="formDataPublicacaoInput" class="invalid-feedback">
+                                                    Campo data publicacao edital deve ser preenchido !
+                                                </div>
                                             </div>
                                         </div>
+                                       
+
                                         <div class="col">
+                                            <!-- Data Edital -->
                                             <div class="form-group">
-                                                <label for="formGroupExampleInput">Data Edital </label>
-                                                <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Data Edital">
+                                                <label for="formDataEditalInput">Data Edital </label>
+                                                <input type="date" class="form-control is-invalid" id="formDataEditalInput" placeholder="Data Edital">
+                                                <div id="formDataEditalInput" class="invalid-feedback">
+                                                    Campo data edital deve ser preenchido !
+                                                </div>
                                             </div>  
                                         </div>
                                     </div>
+                                    <!-- Descritivo Edital -->
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Descritivo Edital</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descritivo Edital"></textarea>
+                                        <label for="formDescritivoEditlaTextarea">Descritivo Edital</label>
+                                        <textarea class="form-control is-invalid" id="formDescritivoEditlaTextarea" rows="3" placeholder="Descritivo Edital"></textarea>
+                                        <div id="formDataEditalInput" class="invalid-feedback">
+                                            Campo descritivo edital deve ser preenchido !
+                                        </div>
                                     </div>
+                                    <!-- Arquivos -->
                                     <div class="form-group">
-                                        <label for="exampleFormControlFile1">Arquivos</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <label for="formArquivosControlFile">Arquivos</label>
+                                        <input type="file" class="form-control-file is-invalid" id="formArquivosControlFile">
+                                        <div id="formDataEditalInput" class="invalid-feedback">
+                                           Um arquivo deve ser selecionado !
+                                        </div>
                                     </div>
+                                    <!-- Cadastrar -->
                                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                                     <a href="http://localhost:8181/admin_area/admin_area/index.html" class="btn btn-secondary" role="button">Voltar</a>
                                 </form>

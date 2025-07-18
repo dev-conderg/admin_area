@@ -3,7 +3,7 @@
  * Modelo de criação de classe padrao em php 4
  */
 
-require_once('Licitacao.php'); //Inclui a classe pai
+require_once('class.Licitacao.php'); //Inclui a classe pai
 
 class LicitacoesDocumentos extends Licitacao{
     var $id_licitacao_documentos;
@@ -21,3 +21,5 @@ class LicitacoesDocumentos extends Licitacao{
         $this->url_documentos = $url_documentos;
     }
 }
+
+
