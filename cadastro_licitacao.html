@@ -320,14 +320,15 @@
                                 <!-- coluna-1 -->
                             </div>
                             <div class="col-md-8">
-                                <form class="form" method="post" action="/admin_area/admin_area/controllers/controller_licitacao/controller.PostLicitacao.php">
+                                <!-- <form class="form" method="post" action="/admin_area/admin_area/controllers/controller_licitacao/controller.PostLicitacao.php"> -->
+                                <form class="form">
                                     <!-- Titulo Edital -->
                                     <div class="form-group">
-                                        <label for="formTituloInput">Titulo do Edital</label>
-                                        <input type="text" name="titulo" class="form-control is-invalid" id="formTituloInput" placeholder="Titulo do Edital">
-                                        <div id="formTituloInput" class="invalid-feedback">
+                                        <label for="titulo_input">Titulo do Edital</label>
+                                        <input type="text" id="titulo_edital" name="titulo" class="form-control"  placeholder="Titulo do Edital">
+                                        <!-- <div id="formTituloInput" class="invalid-feedback">
                                             Campo titulo deve ser preenchido !
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                     <div class="row">
@@ -371,7 +372,7 @@
                                         </div>
                                     </div>
                                     <!-- Cadastrar -->
-                                    <button type="submit" value="cadastrar" class="btn btn-primary">Cadastrar</button>
+                                    <button type="submit" value="cadastrar" class="btn btn-primary" onclick="formValidation()">Cadastrar</button>
                                     <a href="admin_area/admin_area/index.html" class="btn btn-secondary" role="button">Voltar</a>
                                 </form>
                             </div>
@@ -447,6 +448,8 @@
         </div>
     </div>
 
+ 
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -464,6 +467,12 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
-</body>
-
+    <!-- Validação de campos front end -->
+    <script type="text/javascript">
+        function formValidation(){
+            var tituloEdital = document.getElementById('titulo_edital').value;
+            alert(tituloEdital); 
+        };
+    </script>
+ </body>
 </html>
