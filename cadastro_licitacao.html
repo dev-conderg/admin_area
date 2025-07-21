@@ -324,7 +324,7 @@
                                 <form class="form">
                                     <!-- Titulo Edital -->
                                     <div class="form-group">
-                                        <label for="titulo_input">Titulo do Edital</label>
+                                        <label for="titulo_edital">Titulo do Edital</label>
                                         <input type="text" id="titulo_edital" name="titulo" class="form-control"  placeholder="Titulo do Edital">
                                         <!-- <div id="formTituloInput" class="invalid-feedback">
                                             Campo titulo deve ser preenchido !
@@ -335,8 +335,8 @@
                                         <div class="col">
                                             <!-- Data Publicacao Edital -->
                                             <div class="form-group">
-                                                <label for="formDataPublicacaoInput">Data Publicação do Edital</label>
-                                                <input type="date" name="data_publicacao" class="form-control is-invalid" id="formDataPublicacaoInput" placeholder="Data Publicação">
+                                                <label for="dt_publicacao">Data Publicação do Edital</label>
+                                                <input type="date" name="data_publicacao" class="form-control is-invalid" id="dt_publicacao" placeholder="Data Publicação">
                                                 <div id="formDataPublicacaoInput" class="invalid-feedback">
                                                     Campo data publicacao edital deve ser preenchido !
                                                 </div>
@@ -347,8 +347,8 @@
                                         <div class="col">
                                             <!-- Data Edital -->
                                             <div class="form-group">
-                                                <label for="formDataEditalInput">Data Edital </label>
-                                                <input type="date" name="data_edital" class="form-control is-invalid" id="formDataEditalInput" placeholder="Data Edital">
+                                                <label for="dt_edital">Data Edital </label>
+                                                <input type="date" name="data_edital" class="form-control is-invalid" id="dt_edital" placeholder="Data Edital">
                                                 <div id="formDataEditalInput" class="invalid-feedback">
                                                     Campo data edital deve ser preenchido !
                                                 </div>
@@ -357,16 +357,16 @@
                                     </div>
                                     <!-- Descritivo Edital -->
                                     <div class="form-group">
-                                        <label for="formDescritivoEditlaTextarea">Descritivo Edital</label>
-                                        <textarea name="descritivo" class="form-control is-invalid" id="formDescritivoEditlaTextarea" rows="3" placeholder="Descritivo Edital"></textarea>
-                                        <div id="formDataEditalInput" class="invalid-feedback">
+                                        <label for="descritivo_edital">Descritivo Edital</label>
+                                        <textarea name="descritivo" class="form-control is-invalid" id="descritivo_edital" rows="3" placeholder="Descritivo Edital"></textarea>
+                                        <div id="descritivo_edital" class="invalid-feedback">
                                             Campo descritivo edital deve ser preenchido !
                                         </div>
                                     </div>
                                     <!-- Arquivos -->
                                     <div class="form-group">
-                                        <label for="formArquivosControlFile">Arquivos</label>
-                                        <input type="file" name="arquivos_url" class="form-control-file is-invalid" id="formArquivosControlFile">
+                                        <label for="arquivos">Arquivos</label>
+                                        <input type="file" name="arquivos_url" class="form-control-file is-invalid" id="arquivos">
                                         <div id="formDataEditalInput" class="invalid-feedback">
                                            Um arquivo deve ser selecionado !
                                         </div>
@@ -471,7 +471,14 @@
     <script type="text/javascript">
         function formValidation(){
             var tituloEdital = document.getElementById('titulo_edital').value;
-            alert(tituloEdital); 
+            var dataPublicacao = document.getElementById('dt_publicacao').value;
+            var dataEdital = document.getElementById('dt_edital').value;
+            var descritivoEdital = document.getElementById('descritivo_edital').value;
+            var arquivos = document.getElementById('arquivos').value;
+
+            
+            
+            
         };
     </script>
  </body>
