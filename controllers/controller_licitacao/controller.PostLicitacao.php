@@ -1,3 +1,4 @@
+
 <?php
 
 // Inclui a classe que trata os dados
@@ -57,3 +58,4 @@ include("../../models/class.Licitacao.php");
             // Aqui você pode salvar no banco ou continuar o processamento
         }
     }
+
