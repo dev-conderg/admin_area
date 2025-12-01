@@ -2,7 +2,9 @@
 <?php
 
 // Inclui a classe que trata os dados
-include("../../models/class.Licitacao.php");
+require_once('../../models/class.Licitacao.php');
+// include("../../models/class.Licitacao.php");
+require_once('../../data/data.Licitacao.php');
 
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -55,6 +57,9 @@ include("../../models/class.Licitacao.php");
             }
         }else{
             echo "Dados válidos!<br>";
+            
+            $licitacao = new Licitacao('',$titulo,$data_publicacao,$data_edital,$descritivo);
+
             // Aqui você pode salvar no banco ou continuar o processamento
         }
     }
