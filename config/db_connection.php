@@ -1,17 +1,29 @@
 <?php
 
-$servername = 'localhost';
+// $servername = 'localhost';
+// $dbname = 'conderg';
+// $username = 'root';
+// $password = '';
+
+// $conn = new mysqli($servername,$username,$password,$dbname);
+
+// if($conn->connect_error){
+//     die("Falha ba conexão: " .$conn->connect_error);
+// }
+
+// echo "Conectado com sucesso !";
+
+$host = 'localhost';
 $dbname = 'conderg';
-$username = 'root';
-$password = '';
+$user = 'root';
+$pass = '';
 
-$conn = new mysqli($servername,$username,$password,$dbname);
-
-if($conn->connect_error){
-    die("Falha ba conexão: " .$conn->connect_error);
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user,$pass);
+    $pdo ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+} catch (PDOException $e) {
+    die("Erro ao conectar: " . $e->getMessage());
 }
-
-echo "Conectado com sucesso !";
 
 
 
